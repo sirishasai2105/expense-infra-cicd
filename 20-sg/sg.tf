@@ -1,5 +1,6 @@
 module "mysql_security_group" {
-    source =  "../../terraform-aws-security-group"
+    #source =  "../../terraform-aws-security-group"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     # sg_tags = "mysql"
@@ -8,7 +9,8 @@ module "mysql_security_group" {
 }
 
 module "node_security_group" {
-    source =  "../../terraform-aws-security-group"
+    #source =  "../../terraform-aws-security-group"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     # sg_tags = "mysql"
@@ -17,7 +19,8 @@ module "node_security_group" {
 }
 
 module "eks_control_plane_security_group" {
-    source =  "../../terraform-aws-security-group"
+    #source =  "../../terraform-aws-security-group"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     # sg_tags = "mysql"
@@ -26,7 +29,8 @@ module "eks_control_plane_security_group" {
 }
 
 module "ingress_controller_security_group" {
-    source =  "../../terraform-aws-security-group"
+    #source =  "../../terraform-aws-security-group"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     # sg_tags = "mysql"
@@ -37,7 +41,8 @@ module "ingress_controller_security_group" {
 
 
 module "bastion_security_group" {
-    source =  "../../terraform-aws-security-group"
+    #source =  "../../terraform-aws-security-group"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     # sg_tags = "mysql"
