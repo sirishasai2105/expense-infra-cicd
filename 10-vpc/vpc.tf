@@ -1,6 +1,7 @@
 module "vpc" {
     #source = "git::https://github.com/sirishasai2105/terraform-aws-vpc.git?ref=main"
     source = "../../terraform-aws-vpc"
+    source = "git::https://github.com/sirishasai2105/terraform-aws-vpc.git?ref=main"
     #source = "./c/devops/daws-81s/repos/terraform-aws-vpc"
     project_name = "expense"
     environment = "dev"
