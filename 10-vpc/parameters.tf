@@ -22,11 +22,11 @@ resource "aws_ssm_parameter" "private_subnet_ids" {
 #   value = join(",", module.vpc.database_subnet_id)
 # }
 
-# resource "aws_ssm_parameter" "db_subnet_group_name" {
-#   name  = "/expense/dev/db_subnet_group_name"
-#   type  = "String"
-#   value = module.vpc.db_subnet_group
-# }
+resource "aws_ssm_parameter" "db_subnet_group_name" {
+  name  = "/expense/dev/db_subnet_group_name"
+  type  = "String"
+  value = module.vpc.db_subnet_group
+}
 
 
 

@@ -18,7 +18,7 @@ module "db" {
 
 
   #security group that rds has to attach i.e mysql sg
-  vpc_security_group_ids = [local.mysql_sg_id]
+  vpc_security_group_ids = [local.mysql_sg_ids]
 
 
   # tags for the project
