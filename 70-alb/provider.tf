@@ -10,7 +10,7 @@ terraform {
     bucket = "remote-state-bucket-aws"
     key    = "siri-7"
     region = "us-east-1"
-    dynamodb_table = "81s-locking"
+    dynamodb_table = "remote-state-table"
   }
 }
 
